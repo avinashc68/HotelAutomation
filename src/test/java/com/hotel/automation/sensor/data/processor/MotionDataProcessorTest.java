@@ -22,5 +22,17 @@ public class MotionDataProcessorTest extends TestCase {
 
 		//then:
 		assertTrue(hotel.getFloors().get(0).getSubCorridors().get(0).getLightBulbs().get(0).isSwitchedOn());
+
+		//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+		//setup:
+		motion = new Motion(1, 1, false);
+
+		//when:
+		motionDataProcessor.processData(motion, hotel);
+
+		//then:
+		assertFalse(hotel.getFloors().get(0).getSubCorridors().get(0).getLightBulbs().get(0).isSwitchedOn());
+
 	}
 }

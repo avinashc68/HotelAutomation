@@ -1,12 +1,5 @@
-/**
- * 
- */
 package com.hotel.automation.entity;
 
-/**
- * @author asgs
- *
- */
 public class MainCorridor extends Corridor {
 
 	private CorridorType type;

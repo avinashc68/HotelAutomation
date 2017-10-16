@@ -7,6 +7,10 @@ import com.hotel.automation.sensor.SensorTypes;
 import com.hotel.automation.sensor.hub.MotionSensorHub;
 import com.hotel.automation.sensor.hub.SensorHub;
 
+/**
+ * Factory to manufacture various sensor hubs. Provides some dependency inversion
+ * @author avinash
+ */
 public class SensorHubFactory {
 
 	public static SensorHub getSensorHub(SensorTypes sensorType, List<Sensor> sensors) {
@@ -15,7 +19,5 @@ public class SensorHubFactory {
 			return sensorHub;
 		}
 		return null;
-	
 	}
-		
-	}
+}

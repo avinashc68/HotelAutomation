@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.hotel.automation.entity.builder;
 
 import java.util.ArrayList;

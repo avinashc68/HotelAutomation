@@ -39,5 +39,13 @@ public class MotionSensorHubTest extends TestCase {
 		//then:
 		assertFalse(hotel.getFloors().get(0).getSubCorridors().get(0).getLightBulbs().get(0).isSwitchedOn());
 		assertTrue(hotel.getFloors().get(0).getSubCorridors().get(1).getAirConditioners().get(0).isSwitchedOn());
+
+		//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+		//when:
+		hub.update(null, new Motion(2, 1, true));
+
+		//then:
+		assertTrue(hotel.getFloors().get(1).getSubCorridors().get(0).getLightBulbs().get(0).isSwitchedOn());
 	}
 }

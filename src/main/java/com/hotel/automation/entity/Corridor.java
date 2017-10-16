@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.hotel.automation.entity;
 
 import java.util.ArrayList;
@@ -11,6 +8,10 @@ import com.hotel.automation.criteria.PowerConsumptionCriteria;
 import com.hotel.automation.entity.controllables.AirConditioner;
 import com.hotel.automation.entity.controllables.LightBulb;
 
+/**
+ * Parent Corridor class, serves as a common ground for its ancestors,typical inheritance heirarchy
+ * @author avinash
+ */
 public abstract class Corridor {
 
 	/**

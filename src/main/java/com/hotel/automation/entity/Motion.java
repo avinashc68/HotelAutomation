@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.hotel.automation.entity;
 
 import java.util.Observable;

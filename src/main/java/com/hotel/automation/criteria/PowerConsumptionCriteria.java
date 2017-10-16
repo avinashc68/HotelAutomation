@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.hotel.automation.criteria;
 
 import java.util.List;
